@@ -18,5 +18,14 @@
         android:id="@+id/home2"
         android:name="com.example.stockapp.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_stock_detail"
+            app:destination="@id/stock_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/stock_detail"
+        android:name="com.example.stockapp.stock_detail"
+        android:label="fragment_stock_detail"
+        tools:layout="@layout/fragment_stock_detail" />
 </navigation>
